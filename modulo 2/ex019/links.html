@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;}
+            a {
+                color: red;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            a:visited {
+                color: rgb(61, 181, 103);
+            }
+
+            a:hover {
+                color: darkblue;
+                text-decoration: underline;
+            }
+
+            a:active {
+                color: rgb(155, 155, 94);
+                text-decoration: none;
+            }
+            .especial {
+                background-color: rgb(255, 255, 255);
+            }
+            .especial::before{
+                content: ' '
+            }
+            .especial::after {
+                content: '' ;
+                text-decoration: none;
+                font-weight: 16px;
+                color: darkcyan;
+            }
+            
+            
+          
+        
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando links</h1>
+  
+    
+            <a href="https://github.com/Ghutemberg" target="_blank">
+                <li>Repositorio Github</li></a>
+            <a class="especial" href="https://www.youtube.com/channel/UCtWH8HhLvAkGsucZRcp40iA" >
+                <h2>Canal Youtube</h2>
+            </a>
+            <h2>
+                <a href="https://www.cursoemvideo.com/" class="especial">
+                    Site</a>
+            </h2>
+
+                <a href="" class="especial">
+                   teste
+                </a>
+
+</body>
+</html>

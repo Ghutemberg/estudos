@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        body{
+            font-family: Arial, Helvetica, sans-serif;}
+            
+            a {
+                color: red;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            a:visited {
+                color: rgb(61, 181, 103);
+            }
+
+            a:hover {
+                color: darkblue;
+                text-decoration: underline;
+            }
+
+            a:active {
+                color: yellow;
+            }
+            .especial {
+                background-color: rgb(0, 0, 0);
+            }
+            .especial::before{
+                content: 'x '
+            }
+            .especial::after {
+                content: 'x' ;
+                text-decoration: none;
+                font-weight: 16px;
+                color: darkcyan;
+            }
+            
+            
+          
+        
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <a href="">
+            <li>
+                <h1 class="especial" >teste</h1>
+            </li>
+        </a>
+        <a href="">
+            <li class="especial">teste 2</li>
+        </a>
+    </ul>
+    
+</body>
+</html>
